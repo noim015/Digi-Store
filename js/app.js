@@ -17,11 +17,11 @@ const showProducts = (products) => {
       
        <img class="product-image" src="${image}" alt="Product Image">
       
-      <h3>${product.title}</h3>
+      <h5 class="card-title" >${product.title}</h5>
       <p>Category: ${product.category}</p>
-      <h2>Price: $ ${product.price}</h2>
-      <h4>Average Rating: ${product.rating['rate']}</h4>
-      <h5>Total Rating Count: ${product.rating['count']}</h5>
+      <h5>Price: $ ${product.price}</h5>
+      <p class="card-text">Average Rating: ${product.rating['rate']}</p>
+      <h6>Total Rating Count: ${product.rating['count']}</h6>
       <button onclick="addToCart(${product.id},${product.price})" id="addToCart-btn" class="buy-now btn btn-success">add to cart</button>
       <button id="details-btn" class="btn btn-danger">Details</button></div>
       `;
