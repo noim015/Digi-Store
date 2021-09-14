@@ -1,9 +1,11 @@
+// Function for fetching data from API and display on website
 const loadProducts = () => {
   const url = `https://raw.githubusercontent.com/ProgrammingHero1/ranga-store-api/main/ranga-api.json`;
   fetch(url)
     .then((response) => response.json())
     .then((data) => showProducts(data));
 };
+// Display all products after website loading
 loadProducts();
 
 // show all product in UI 
@@ -26,7 +28,9 @@ const showProducts = (products) => {
     document.getElementById("all-products").appendChild(div);
   }
 };
+
 let count = 0;
+// Function for Add To Cart button
 const addToCart = (id, price) => {
   count = count + 1;
   updatePrice("price", price);
@@ -35,6 +39,7 @@ const addToCart = (id, price) => {
   updateTotal();
 };
 
+// Function for getting value by ID
 const getInputValue = (id) => {
   const element = document.getElementById(id).innerText;
   const converted = parseFloat(element);

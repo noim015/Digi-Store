@@ -2,7 +2,7 @@ body {
   overflow-x: hidden;
   font-family: "Montserrat", sans-serif;
 }
-
+/* CSS for product section */
 #all-products {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -52,12 +52,14 @@ body {
 .cart-main {
   padding-right: 30px;
 }
+/* CSS for Footer section */
 footer{
   background: #000;
   padding:15px 0 5px 0 ;
   color: #fff;
   margin-top: 10px;
 }
+/* CSS for max width size 768px  */
 @media only screen and (max-width: 768px) {
   #all-products {
     display: grid;
@@ -75,6 +77,7 @@ footer{
     padding-right: 10px;
   }
 }
+/* CSS for max width size 468px  */
 @media only screen and (max-width: 468px) {
   #all-products {
     display: grid;
